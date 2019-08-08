@@ -1,4 +1,5 @@
 #!ipxe
 set net0/ip 169.254.250.250
 set net0/netmask 255.255.0.0
+ifopen net0
 chain http://169.254.254.254/ipxe?mac=${net0/mac}
